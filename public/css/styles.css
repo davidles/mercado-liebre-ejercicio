@@ -1,9 +1,3 @@
-/*
-selector (etiqueta, clase  o  id){
-    propiedad:  valor
-}
-*/
-
 *{
     padding: 0;
     margin: 0;
@@ -22,9 +16,31 @@ header{
     padding: 10px;
 }
 
+/* Agregado */
+
+header nav{
+    width: 75%;
+    margin: auto;
+}
+
+/************/
+
 header h1{
     display: none;
 }
+
+/* Agregado */
+
+header ul li{
+    display: inline-block;
+    margin-right: 12px;
+}
+
+header ul{ 
+    margin-top: 10px;  
+}
+
+/****************/
 
 a{
     text-decoration: none;
@@ -47,15 +63,14 @@ section h2{
     margin: 10px 0px;
     padding: 10px;
     border-radius: 8px;
+    line-height: 24px;
 }
 
-h3{
-    font-style: italic;
-}
-
+/* Modificado */
 article.style-article h3{
-    text-align: left;
     font-family: 'Victor Mono', monospace;
+    font-style: italic;
+    margin-bottom: 10px;
 }
 
 @media (min-width: 760px){
