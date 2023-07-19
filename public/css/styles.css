@@ -1,0 +1,72 @@
+/*
+selector (etiqueta, clase  o  id){
+    propiedad:  valor
+}
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(235,235,235);
+    color: rgb(10, 6, 39);
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: rgb(255,241,89);
+    padding: 10px;
+}
+
+header h1{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(18, 11, 76);;
+}
+
+section{
+    width: 70vw;
+    margin: auto;
+}
+
+section h2{
+    padding: 15px;
+}
+
+.style-article{
+    background-color: #fdfeff;
+    color: rgb(10, 6, 39);
+    text-align: center;
+    margin: 10px 0px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+h3{
+    font-style: italic;
+}
+
+article.style-article h3{
+    text-align: left;
+    font-family: 'Victor Mono', monospace;
+}
+
+@media (min-width: 760px){
+    .style-article{
+        border: 1px solid rgb(63, 63, 63);
+        max-width: 270px;
+        
+    }
+
+    .style-article h3{
+        font-size: 1rem;
+    }
+}
+

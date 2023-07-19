@@ -4,44 +4,84 @@
         <!-- Metadatos: Datos referentes al funcionamiento de la página -->
         <meta charset="UTF-8">
         <title>Mi primera app</title>
-        
+        <link rel="stylesheet" href="/css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,300;0,400;1,100&display=swap" rel="stylesheet">
+        <!-- Footawesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
 
     <body>
-        <!-- Logo Menu y lo necesario para que el usuario navegue en nuestra página -->
+        <!-- Encabezado -->
         <header>
-            <h1>Mercado Liebre</h1>
-            <img src="/img/logo-mercado-liebre.svg" alt="Logo mercado liebre" width="300">
+            <h1>mercado liebre</h1>
             <nav>
+                <a href="/">
+                    <img src="/img/logo-mercado-liebre.svg" alt="logo" width="150">
+                </a>
+
                 <ul>
                     <li>
-                        <a href="/">Home</a>
+                        <a href="#home">Home</a>
                     </li>
                     <li>
-                        <a href="/product">Products</a>                      
+                        <a href="#cart">Cart <i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                    <li>
+                        <a href="#about">About us</a>
+                    </li>
+                    <li>
+                        <a href="http://www.google.com">Google</a>
                     </li>
                 </ul>
             </nav>
         </header>
 
-        <!-- Contenido principal de la página  -->
+        <!-- Contenido principal -->
         <main>
-
             <section>
-                <div>
-                    <h2>Paleta de pádel Head Cyber Pro</h2>
-                    <article>
-                        <h3>Paleta de  padel Ardidas</h3>
-                        <p>Lorem ipsum dolor sit, <span>amet consectetur</span> adipisicing elit.</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                    </article>
-                </div>
-                <button>Comprar</button>
-
+                <h2>Productos más vendidos</h2>
+                <article class="style-article">
+                    <img src="/img/pelota.png" alt="pelota de fútbol" width="100">
+                    <h3>Paleta Padel adidas Precision Pro 2021 Importada</h3>
+                    <p>$20400</p>
+                    <p>Envío gratis</p>
+                    <a href="/detalle">Ver más</a>
+                </article class="style-article">
+                <article class="style-article">
+                    <img src="/img/basketball.png" alt="pelota de basquet" width="100">
+                    <h3>Pelota  de  basket</h3>
+                    <p>$20400</p>
+                    <p>Envío gratis</p>
+                    <a href="/detalle">Ver más</a>
+                </article>
             </section>
 
+            <section>
+                <h2>Últimos visitados</h2>
+
+                <article class="style-article">
+                    <img src="/img/basketball.png" alt="pelota de basquet" width="100">
+                    <h3>Pelota  de  basket</h3>
+                    <p>$20400</p>
+                    <p>Envío gratis</p>
+                    <a href="/detalle">Ver más</a>
+                </article>
+                <article id="about" class="style-article">
+                    <img src="/img/pelota.png" alt="pelota de fútbol" width="100">
+                    <h3>Paleta Padel adidas Precision Pro 2021 Importada</h3>
+                    <p>$20400</p>
+                    <p>Envío gratis</p>
+                    <a href="/detalle">Ver más</a>
+                </article>
+
+            </section>
         </main>
 
+        <!-- Contenido secundario -->
         <footer>
             <p>Copyright</p>
         </footer>
