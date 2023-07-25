@@ -5,9 +5,7 @@
 }
 
 body{
-    background-color: rgb(235,235,235);
     color: rgb(10, 6, 39);
-
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -47,10 +45,16 @@ a{
     color: rgb(18, 11, 76);;
 }
 
-section{
-    width: 70vw;
-    margin: auto;
+main{  
+    background-color: rgb(235,235,235);
 }
+
+section{
+    width: 100%;
+    /* margin: auto;    */
+}
+
+
 
 section h2{
     padding: 15px;
@@ -64,6 +68,11 @@ section h2{
     padding: 10px;
     border-radius: 8px;
     line-height: 24px;
+    height: max-content;
+}
+
+article.style-article img{
+    width: 30%;
 }
 
 /* Modificado */
@@ -71,6 +80,34 @@ article.style-article h3{
     font-family: 'Victor Mono', monospace;
     font-style: italic;
     margin-bottom: 10px;
+}
+
+@media (min-width: 520px){
+    section.mas-vendidos{
+        background-color: grey;
+        height: 500px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+        position: relative;
+    }
+    
+    article.style-article{
+        max-width: 150px;
+    }
+
+    /* article#football img{
+        margin: auto;
+    } */
+
+    article#football{
+        background-color: aqua;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: flex-start;
+    }
 }
 
 @media (min-width: 760px){
