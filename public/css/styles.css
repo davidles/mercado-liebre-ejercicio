@@ -58,6 +58,7 @@ section{
 
 section h2{
     padding: 15px;
+    color: red;
 }
 
 .style-article{
@@ -80,6 +81,7 @@ article.style-article h3{
     font-family: 'Victor Mono', monospace;
     font-style: italic;
     margin-bottom: 10px;
+    color: red;
 }
 
 @media (min-width: 520px){
