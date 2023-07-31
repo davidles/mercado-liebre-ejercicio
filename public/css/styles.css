@@ -84,6 +84,88 @@ article.style-article h3{
     color: red;
 }
 
+
+/* FORMULARIO */
+
+main#main-form{
+    background-color: aqua;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    background-color: rgb(185, 234, 236);
+    width: 70vw;
+    max-width: 520px;
+    padding: 50px;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+form label{
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+form input{
+    margin-bottom: 30px;
+}
+
+form input[type="text"]{
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    outline: none;
+
+    transition: border 2s;
+}
+
+form input[type="text"]:focus{
+    border: 3px solid rgb(22, 69, 199);
+}
+
+form button{
+    color: white;
+    background-color: blue;
+    font-weight: 700;
+    border: 2px solid transparent;
+    padding: 5px;
+    transition-property: background-color,  border-radius;
+    transition-duration: 2s;
+}
+
+form button:hover{
+    background-color: rgb(117, 197, 63);
+    border-radius: 10px;
+    box-shadow: 13px 17px 14px -9px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 13px 17px 14px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 13px 17px 14px -9px rgba(0,0,0,0.75);
+}
+
+div.animacion{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+
+    animation: redondo 3s infinite;
+}
+
+@keyframes redondo{
+    from{
+        border-radius: 3px;
+    }
+
+    to{
+        border-radius: 50%;
+        background-color: blue;
+    }
+}
+
+
 @media (min-width: 520px){
     section.mas-vendidos{
         background-color: grey;

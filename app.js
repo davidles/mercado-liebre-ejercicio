@@ -19,6 +19,22 @@ app.get('/product', (req, res) => {
     res.sendFile(path.resolve(__dirname, './views/product.html'))
 })
 
+app.get('/form', (req, res) => {
+    res.sendFile(path.resolve(__dirname, './views/form.html'))
+})
+
+app.post('/form',  (req,  res) =>{
+    res.redirect('/');
+})
+
+app.get('/confirmacion', (req, res) => {
+    res.sendFile(path.resolve(__dirname, './views/confirmacion.html'))
+})
+
+app.post('/', (req, res) =>{
+    res.redirect('/')
+})
+
 
 
 
